@@ -4468,7 +4468,7 @@ load_ppd(cupsd_printer_t *p)		/* I - Printer */
       ippAddStrings(p->ppd_attrs, IPP_TAG_PRINTER, IPP_TAG_KEYWORD,
                     "print-color-mode-supported", 2, NULL, color_modes);
       ippAddString(p->ppd_attrs, IPP_TAG_PRINTER, IPP_TAG_KEYWORD,
-                   "print-color-mode-default", NULL, "color");
+                   "print-color-mode-default", NULL, "monochrome");
       ippAddStrings(p->ppd_attrs, IPP_TAG_PRINTER, IPP_TAG_KEYWORD, "pwg-raster-document-type-supported", 3, NULL, pwg_raster_document_types);
 
       urf[num_urf ++] = "SRGB24";
